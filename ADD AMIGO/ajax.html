@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>AJAX</h1>
+    <ul id="amigos"></ul>
+    <button id="BtnCargar">CARGAR</button>
+
+    <h2>FACEBOOK</h2>
+    <ul id="amigosfb"></ul>
+
+    <h2>SPOTY</h2>
+    <ul id="amigossp"></ul>
+
+    <button id="cargaramigosfb">Cargar amigos FB</button>
+
+    <button id="cargaramigossp">Cargar amigos SP</button>
+
+    <div>
+        <h2>Añadir amigo</h2>
+        <form id="form" action="POST">
+            <input placeholder="Nombre" id="name" required>
+            <input placeholder="Email"  type="email"  id="email" required>
+            <button id="btnAdd">Añadir</button>
+        </form>
+    </div>
+
+</body>
+<script src="./jquery-3.3.1.min.js" ></script>
+<script src="./ajax.js"></script>
+</html>
