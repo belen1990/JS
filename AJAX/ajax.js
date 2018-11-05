@@ -19,6 +19,9 @@ $('#cargaramigosfb').click(function () {
         url: "http://www.mocky.io/v2/5bd84b1e3100002414474d4b",
     }).done(function (amigosfromserve) {
         console.log(amigosfromserve);
+        let textoFiltro=document.getElementById('buscador').value;
+        let arrfiltrado=amigosfromserve.filter(elem => {return elem.name.indexOf(textoFiltro)>=0?true:false;} )
+
         generarHtml('#amigosfb', amigosfromserve);
 
         //saludar los botones //asociar eventos
